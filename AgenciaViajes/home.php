@@ -35,7 +35,7 @@
         <div class="container my-3">
             <div class="row">
                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-4">
-                    <h2>ADD TICKET </h2>
+                    <h2>TICKET</h2>
                     <form action="./config/Process.php" method="post">
                         <div class="mb-3">
                             <label for="id" class="form-label">Id</label>
@@ -43,35 +43,38 @@
                         </div>
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required></input>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name"></input>
                         </div>
                         <div class="mb-3">
                             <label for="ln" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="ln" name="last" placeholder="Last Name" required/>
+                            <input type="text" class="form-control" id="ln" name="last" placeholder="Last Name"/>
                         </div>
                         <div class="mb-3">
                             <label for="mail" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="mail" name="mail" placeholder="Email" required/>
+                            <input type="email" class="form-control" id="mail" name="mail" placeholder="Email"/>
                         </div>
                         <div class="mb-3">
                             <label for="pass" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="pass" name="contra" placeholder="Password" required/>
+                            <input type="password" class="form-control" id="pass" name="contra" placeholder="Password"/>
                         </div>
                         <div class="mb-3">
                             <label for="pn" class="form-label">Phone number</label>
-                            <input type="number" class="form-control" id="pn" name="phone" placeholder="Phone number" required/>
+                            <input type="number" class="form-control" id="pn" name="phone" placeholder="Phone number"/>
                         </div>
                         <div class="mb-3">
                             <label for="ori" class="form-label"> Origin</label>
-                            <input type="text" class="form-control" id="ori" name="ori" placeholder="Origin" required/>
+                            <input type="text" class="form-control" id="ori" name="ori" placeholder="Origin"/>
                         </div>
                         <div class="mb-3">
                             <label for="dss" class="form-label">Destiny</label>
-                            <input type="text" class="form-control" id="dss" name="des" placeholder="Destiny" required/>
+                            <input type="text" class="form-control" id="dss" name="des" placeholder="Destiny"/>
                         </div>
                         <div class="d-grid gap-2">
                             <button class="btn btn-success" type="submit" name="add">Guardar</button>
-                            <button class="btn btn-secondary">Limpiar</button>
+                            <label for="del"><b>*Para eliminar solo digite el campo Identification Card*</b></label>
+                            <button class="btn btn-danger" type="submit" name="delete" id="del">Eliminar</button>
+                            <label for="up"><b>*El campo Identification Card es unico y no se actualiza. Rellene todos los campos del formulario y despues oprima el boton Actualizar*</b></label>
+                            <button class="btn btn-warning" type="submit" name="update" id="up">Actualizar</button>
                         </div>
                     </form>
                 </div>
